@@ -1,0 +1,28 @@
+@startuml
+class Program {
+    {static} Main(args:string[]) : void
+}
+class Avtal {
+    + RegNr : string <<get>> <<set>>
+    + Km : int <<get>> <<set>>
+    + Kostnad : int <<get>> <<set>>
+    + Tidsram : int <<get>> <<set>>
+    + PersonNr : string <<get>> <<set>>
+    + finnsRegNr() : bool
+    + RäknaKostnad() : int
+    + RäknaInlämningsdatum() : String
+}
+class Kund {
+    + Personnr : string <<get>> <<set>>
+    + Fnamn : string <<get>> <<set>>
+    + Enamn : string <<get>> <<set>>
+    + Mobil : string <<get>> <<set>>
+}
+class "List`1"<T> {
+}
+class "IDictionary`2"<T1,T2> {
+}
+Program o-> "listaAvtal<Avtal>" "List`1"
+Avtal --> "Datum" DateTime
+Avtal o-> "bilar<string,int>" "IDictionary`2"
+@enduml

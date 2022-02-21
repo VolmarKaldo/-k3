@@ -1,0 +1,7 @@
+{
+    "csharp2plantuml.allInOne": true,
+    "csharp2plantuml.createAssociation": false,
+    "csharp2plantuml.public": false,
+    "plantuml.render": "PlantUMLServer",
+    "plantuml.server": "http://www.plantuml.com/plantuml"
+}
